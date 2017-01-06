@@ -17,7 +17,7 @@ for div in root.cssselect("div[class='zone_info_mep ']"):
 
     mep_id = int(mep_url.split('/')[3])
 
-    print(u"{0} => {1}".format(mep_name, mep_url))
+    print(u"Reading mep data from {0}".format(mep_url))
     mep_html = scraperwiki.scrape(
         "{0}{1}".format(euparl_url, mep_url)
     )
